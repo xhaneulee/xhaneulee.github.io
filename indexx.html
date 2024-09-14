@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Skyler's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3JtMTc5NC10dS0wMTkuanBn.jpg">
+    
+    <style>
+        /*NB: Had to put the nav bar style in the html, due to the sticky bar position wouldn't work properly in the css file*/
+        .navbar {
+        font-family: "MedievalSharp", cursive;
+        background-color: black;
+        padding: 10px 20px;
+        max-width: 1200px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        }
+
+        .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        }
+
+        .navbar ul li {
+        margin: 0 15px;
+        }
+
+        .navbar ul li a {
+        color: #57625a;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+        color: #acafb4;
+        text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 id="top-text" class="header-name">Welcome to my portfolio</h1>
+        <hr>
+        <div class="flex-container">
+            <div class="header-img">
+                <img src="../portfolio/me.jpg" alt="a picture of me!!">
+            </div>
+            <div class="header-content">
+                <h1>My name is <span>Skyler Ånensen</span></h1>
+                <h3 class="typing-text">I'm a <span id="typewriter-text"></span></h3>
+                <p>A non-binary person living in Bodø who uses they/he pronouns.<br>
+                    I’m currently a front-end developer in training and plan to study <br> data engineering in the future.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about-me">
+            <h2>About me</h2>
+            <p>I'm a 19 year old person who recently graduated high school (vgs), where I 
+                studied music with piano as my main instrument. <br>Currently, I work at a bike repair shop, which I really enjoy.  
+                In my free time I like playing the piano and sometimes the guitar, <br> as well as videogames
+                (Baldurs Gate 3, The Witcher, Kingdom Come: Deliverance, Life is Strange and Sally Face). 
+                <br>I'm also passionate about medieval, fantasy and DnD genres, and I take a liking to 
+                sitcoms, sci-fi and action. Overall, I'm a conscientious,
+                open-minded and good-hearted person with strong communication skills.</p> 
+                <hr>
+       
+            <div class="youtube">
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/AP3yyqy4SKc?si=-jjlASu8PKI49O6T" title="Home sweet home" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/CNVAZFCfpeQ?si=zGpFXedzgOovEUel" title="Merry Christmas Mr. Lawrence" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="description-text">
+                <p>All time favorite song(and band)</p>
+                <p>All time favorie classical piece <br>Funfact: I know how to play this on piano😎</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <hr>
+            <div class="card-container">
+                <div class="container">
+                    <div class="card">
+                        <div class="front" style="background-image: url(https://i.pinimg.com/564x/f6/f5/7c/f6f57c3d09e02be990a48a3e44dd74b2.jpg); background-size: 220px 350px;"></div>
+                        <div class="back">
+                            <h1>Piano</h1>
+                            <p>Been playing for 9 years (2015-2024). Took it more seriously in high school,
+                                when I had piano classes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="front" style="background-image: url(https://i.pinimg.com/564x/c8/42/a9/c842a9a6cd6ad735d8f56c2f1f043b77.jpg); background-size: 220px 250px;"></div>
+                        <div class="back">
+                            <h1>Programming (soon, hopefully)</h1>
+                            <p>Used to take programming as a class back in secondary school, its good to catch up again</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="front" style="background-image: url(https://i.pinimg.com/564x/bb/d6/05/bbd605816a5407051f8cc19dddc3d1ee.jpg); background-size: 220px 350px;"></div>
+                        <div class="back">
+                            <h1>Observant</h1>
+                            <p>I often hear that I am observant, I usually read people well etc..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <div class="front" style="background-image: url(https://themindsjournal.com/wp-content/uploads/2018/01/full-picture.jpg); background-size: 220px 350px;"></div>
+                        <div class="back">
+                            <h1>Detail oriented</h1>
+                            <p>I'm good at paying close attention of small particulars when working on something, also something I hear from people</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <hr>
+            <div class="ed-container">
+                <div class="row">
+                    <section class="col">
+                        <div class="ed-contents">
+                            <div class="box">
+                                <h4>2023-2024</h4>
+                                <h3>Musikk Vg3 - Bodø Vgs</h3>
+                            </div>
+                            <div class="box">
+                                <h4>2022-2023</h4>
+                                <h3>Musikk Vg2 - Bodø Vgs</h3>
+                            </div>
+                            <div class="box">
+                                <h4>2021-2022</h4>
+                                <h3>Musikk, dans og drama Vg1 - Bodø Vgs</h3>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <section id="contact-me">
+            <footer>
+                <h2>You can contact me at</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email:</h4>
+                        <p class="email-id">skyleraanen@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>GitHub:</h4>
+                        <p class="username">xhaneulee</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">© 2024 Skyler's Portfolio. All rights reserved.</p>
+            </footer>
+        </section>
+
+    <script>
+        const textArray = ["Pianist", "Gamer", "Nerd", "Metalhead", "DnD enthusiast"];
+        let typingSpeed = 200;
+        let deletingSpeed = 150;
+        let textIndex = 0;
+        let charIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+    
+        function typeWriter () {
+            currentText = textArray[textIndex];
+            
+            if (isDeleting) {
+                document.getElementById("typewriter-text").textContent = currentText.substring(0, charIndex--);
+                if (charIndex <0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % textArray.length;
+            }
+            } else {
+                document.getElementById("typewriter-text").textContent = currentText.substring(0, charIndex++);
+                if (charIndex > currentText.length) {
+                    isDeleting = true
+                }
+            }
+    
+            let speed = isDeleting ? deletingSpeed : typingSpeed;
+            setTimeout(typeWriter, speed);
+        }
+    
+        typeWriter();
+       </script>
+</body>
+</html>
